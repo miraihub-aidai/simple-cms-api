@@ -1,0 +1,27 @@
+{
+    "name": "simplecms/api",
+    "description": "A simple CMS API using PHP 8.3 and SQLite",
+    "type": "project",
+    "require": {
+        "php": "^8.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5",
+        "friendsofphp/php-cs-fixer": "^3.14"
+    },
+    "autoload": {
+        "psr-4": {
+            "SimpleCms\\Api\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SimpleCms\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "cs-fix": "php-cs-fixer fix src",
+        "cs-fix-all": "php-cs-fixer fix src tests"
+    }
+}
